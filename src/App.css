@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    font-family: Poppins;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(99, 30, 30);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: rgb(73, 73, 73);
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    gap: 10px;
+}
+
+.category{
+    border: 3px solid rgb(80, 30, 30);
+    padding: 5px 5px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+    box-shadow: 2px 5px 15px 5px rgba(0,0,0,0.18);
+    width: 100%;
+}
+
+.category:hover{
+    background-color: rgb(51, 51, 51);
+}
+
+.search{
+    background-color: rgb(32, 32, 32);
+    border: 1px solid white;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 50px;
+    color: white;
+    transition: all 0.1s ease-out;
+}
+
+.search:hover{
+    transform: scale(1.02);
+}
+
+.search:focus{
+    transform: scale(1.02);
+}
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 20px;
+}
+
+.card{
+    margin: 10px 0px;
+    width: 300px;
+    background-color: rgb(73, 73, 73);
+    border-radius: 9px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 2px 5px 15px 5px rgba(0,0,0,0.37);
+}
+
+.card:hover{
+    background-color: rgb(51, 51, 51);
+}
+
+.card:hover .overview{
+    transform: translateY(0);
+}
+
+.title_rating{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5px;
+}
+
+.title{
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+.rating{
+    font-size: 22px;
+    font-weight: 600;
+
+}
+
+.overview{
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: all 0.3s ease-out;
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.overview h3{
+    color: rgb(80, 30, 30);
+    font-weight: 600;
+    border-bottom: 1px solid rgb(80, 30, 30);
+    padding: 5px;
+    margin-bottom: 7px;
+}
+
